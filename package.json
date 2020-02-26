@@ -1,0 +1,15 @@
+{
+  "name": "8thwall-test",
+  "version": "1.0.0",
+  "description": "8th wall test",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 9000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "odiaz.dw@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.0"
+  }
+}
