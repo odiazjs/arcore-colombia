@@ -7,12 +7,21 @@
   </title>
 
   <style>
-    model-viewer{
+    model-viewer {
       display: block;
       position: relative;
       contain: strict;
       width: 375px !important;
       height: 400px !important;
+      --progress-bar-color: white;
+      --progress-bar-margin: 100px;
+
+    }
+    .custom {
+      margin-top: 50%;
+      margin-left: 40%;
+      background-color: green;
+      border: 3px solid white;
     }
   </style>
 
@@ -29,22 +38,26 @@
 <body style='margin : 0px; overflow: hidden;'>
 
   <!-- Explicit Intent -->
-  <!-- <a
+  <a
     href="intent://raw.githubusercontent.com/odiazjs/arcore-colombia/master/assets/goldenboot/Botin%20de%20Oro.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
     GOLDEN BOOT
-  </a> -->
+  </a>
 
 
   <!-- Model Viewer -->
-  <div class="container" style="width: auto; height: auto;">
-    <model-viewer 
-      ios-src="./assets/goldenboot/Botin de Oro Messi.usdz"
-      src="./assets/goldenboot/Botin de Oro.gltf" alt="6to botin de oro de Messi" ar auto-rotate
-      skybox-image="./assets/tv_studio_1k.hdr" 
-      camera-controls>
+  <div class="demo">
+    <model-viewer ios-src="./assets/goldenboot/Botin de Oro Messi.usdz" src="./assets/goldenboot/Botin de Oro.gltf"
+      alt="6to botin de oro de Messi" ar auto-rotate skybox-image="./assets/tv_studio_1k.hdr"
+      style="background-color: unset;" camera-controls>
+      <!-- <div slot="progress-bar">
+        <div class="custom"></div>
+      </div> -->
+      <button slot="ar-button"
+        style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+        Activar en Realidad Aumentada
+      </button>
     </model-viewer>
   </div>
-
 </body>
 
 </html>
