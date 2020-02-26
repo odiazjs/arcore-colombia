@@ -6,6 +6,16 @@
     ARCore - Model Viewer
   </title>
 
+  <style>
+    model-viewer{
+      display: block;
+      position: relative;
+      contain: strict;
+      width: 400px !important;
+      height: 400px !important;
+    }
+  </style>
+
   <meta name="description" content="balondioro">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
@@ -26,8 +36,10 @@
 
 
   <!-- Model Viewer -->
-  <div class="container" style="width: 100%; height: 100%;">
-    <model-viewer src="./assets/goldenboot/Botin de Oro.gltf" alt="6to botin de oro de Messi" ar auto-rotate camera-controls>
+  <div class="container" style="width: auto; height: auto;">
+    <model-viewer src="./assets/goldenboot/Botin de Oro.gltf" alt="6to botin de oro de Messi" ar auto-rotate
+      skybox-image="./assets/tv_studio_1k.hdr" 
+      camera-controls>
     </model-viewer>
   </div>
 
