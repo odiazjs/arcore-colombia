@@ -5,8 +5,7 @@ function init() {
 }
 
 function initAR() {
-  AFRAME.registerComponent("gltf-morph", gltfMorphComponent);
-  AFRAME.registerComponent("morph-target-drag", morphTargetDragComponent);
+  
 }
 
 function checkDomState() {
